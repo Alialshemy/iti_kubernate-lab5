@@ -32,4 +32,19 @@ httpGet path should be /healthz its port should be 1024. The first port name sho
 and its containerPort should be 80, second port name should be https and its
 containerPort should be 443 and third port name should be stat its containerPort should
 be 1024. Define environment as first env name should be TZ its value should be Etc/UTC,
-second env name should be POD_NAME its
+second env name should be POD_NAME its</br>
+valueFrom:</br>
+fieldRef:</br>
+fieldPath: should be metadata.name and third env name should be POD_NAMESPACE
+its</br>
+valueFrom:</br>
+fieldRef:</br>
+fieldPath: should be metadata.namespace.</br></br>
+8- Create a service for frontend which should be named as ingress-service-devops under
+same namespace, labels run should be haproxy-ingress. Configure spec as selectors' run
+should be haproxy-ingress, type should be NodePort. The first port name should be http,
+its port should be 80, protocol should be TCP, targetPort should be 80 and nodePort should
+be 32456. The second port name should be https, its port should be 443, protocol should
+be TCP, targetPort should be 443 and nodePort should be 32567. The third port name
+should be stat, its port should be 1024, protocol should be TCP, targetPort should be 1024
+and nodePort should be 32678.
