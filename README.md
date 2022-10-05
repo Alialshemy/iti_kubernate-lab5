@@ -48,3 +48,7 @@ be 32456. The second port name should be https, its port should be 443, protocol
 be TCP, targetPort should be 443 and nodePort should be 32567. The third port name
 should be stat, its port should be 1024, protocol should be TCP, targetPort should be 1024
 and nodePort should be 32678.
+
+
+<h1>The result </h1>
+<img src="https://github.com/Alialshemy/iti_kubernate-lab5/blob/main/result.png" alt="Alialshemy" />
